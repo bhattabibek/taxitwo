@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>ABQ Green Cab Co</title>
+  </head>
+  <body>
+    <header class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap  flex-col md:flex-row items-center">
+        <img style="width: 160px; height: auto;" src="images/logo main.png">
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-blue-500 text-blue-700">Home</a>
+          <a class="mr-5 hover:text-blue-500 text-blue-700">Contact Us</a>
+          <a href="about.html" class="mr-5 hover:text-blue-500 text-blue-700">About us</a>
+        </nav>
+        <button class="inline-flex items-center  bg-green-500 text-gray-100 border-0 py-3 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 mb-4 md:mt-0">
+          Contact Us
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <section class="Carousel" id="carousel" tabindex="-1">
+      <h2 class="Hidden">Carousel</h2>
+      <article class="Card Card--overlay Card--square" id="card-1">
+        <div class="Card__media">
+          <img
+            class="Card__image"
+            alt="Card image description"
+            width="480"
+            height="480"
+            loading="lazy"
+            src="images/1.jpg"
+          >
+        </div>
+      </article>
+      <article class="Card Card--overlay Card--wide" id="card-2">
+        <div class="Card__media">
+          <img
+            class="Card__image"
+            alt="Card image description"
+            width="720"
+            height="480"
+            loading="lazy"
+            src="images/2.jpg"
+          >
+        </div>
+      </article>
+      <!--/Card-->
+      <article class="Card Card--overlay Card--portrait" id="card-3">
+        <div class="Card__media">
+          <img
+            class="Card__image"
+            alt="Card image description"
+            width="360"
+            height="480"
+            loading="lazy"
+            src="images/3.jpg"
+          >
+        </div>
+      </article>
+      <!--/Card-->
+      <article class="Card Card--overlay Card--photo" id="card-4">
+        <div class="Card__media">
+          <img
+            class="Card__image"
+            alt="Card image description"
+            width="708"
+            height="480"
+            loading="lazy"
+            src="images/4.jpg"
+          >
+        </div>
+      </article>
+      <!--/Card-->
+      <article class="Card Card--overlay Card--square" id="card-5">
+        <div class="Card__media">
+          <img
+            class="Card__image"
+            alt="Card image description"
+            width="480"
+            height="480"
+            loading="lazy"
+            src="images/5.jpg"
+          >
+        </div>
+      </article>
+      <!--/Card-->
+      <article class="Card Card--overlay Card--wide" id="card-6">
+        <div class="Card__media">
+          <img
+            class="Card__image"
+            alt="Card image description"
+            width="720"
+            height="480"
+            loading="lazy"
+            src="images/6.jpg"
+          >
+        </div>
+      </article>
+      <!--/Card-->
+      <article class="Card Card--overlay Card--portrait" id="card-7">
+        <div class="Card__media">
+          <img
+            class="Card__image"
+            alt="Card image description"
+            width="360"
+            height="480"
+            loading="lazy"
+            src="images/7.jpg"
+          >
+        </div>
+      </article>
+      <!--/Card-->
+      <article class="Card Card--overlay Card--photo" id="card-8">
+        <div class="Card__media">
+          <img
+            class="Card__image"
+            alt="Card image description"
+            width="708"
+            height="480"
+            loading="lazy"
+            src="images/8.png"
+          >
+        </div>
+      </article>
+      <!--/Card-->
+    </section>
+    <!--/Carousel-->
+    <nav class="Pagination">
+      <h2 class="Hidden">Carousel Navigation</h2>
+      <button class="Arrow" type="button" aria-controls="carousel" disabled>
+        <svg width="16" height="16" viewBox="0 0 16 16" role="presentation">
+          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+        <span class="Hidden">Previous slide</span>
+      </button>
+      <button class="Arrow" type="button" aria-controls="carousel" disabled>
+        <svg width="16" height="16" viewBox="0 0 16 16" role="presentation">
+          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+        </svg>
+        <span class="Hidden">Next slide</span>
+      </button>
+      <div class="Dots">
+        <a href="#card-1" class="Dot" tabindex="-1">
+          <span class="Hidden">Slide 1</span>
+        </a>
+        <a href="#card-2" class="Dot" tabindex="-1">
+          <span class="Hidden">Slide 2</span>
+        </a>
+        <a href="#card-3" class="Dot" tabindex="-1">
+          <span class="Hidden">Slide 3</span>
+        </a>
+        <a href="#card-4" class="Dot" tabindex="-1">
+          <span class="Hidden">Slide 4</span>
+        </a>
+        <a href="#card-5" class="Dot" tabindex="-1">
+          <span class="Hidden">Slide 5</span>
+        </a>
+        <a href="#card-6" class="Dot" tabindex="-1">
+          <span class="Hidden">Slide 6</span>
+        </a>
+        <a href="#card-7" class="Dot" tabindex="-1">
+          <span class="Hidden">Slide 7</span>
+        </a>
+        <a href="#card-8" class="Dot" tabindex="-1">
+          <span class="Hidden">Slide 8</span>
+        </a>
+      </div>
+    </nav>
+    <!--/Pagination-->
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img class="object-cover object-center h-306 rounded" alt="hero" src="images/main.jpeg">
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            Overview
+            <br class="hidden lg:inline-block">
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            The professional team of ABQ Green Cab strives to serve you the best with fast, friendly and reliable taxi service to all of our valuable customers. We at ABQ Green Cab strive to offer our valuable customers with quality service at unbeatable price.
+            <br>
+            You will be treated best of the best and our drivers will make your ride enjoyable anywhere around Albuquerque, NM.
+            <br>
+            ABQ Green Cab moves you to and from the airport and at the same time offer service for various occasions.
+            <br>
+            Call us to make a reservation and professional team of ABQ will make sure that you will be picked promptly to move you to your destination.  All cabs are non-smoking.
+          </p>
+          <div class="flex justify-center">
+            <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <a href="about.html">Read More</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-20 flex-wrap">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">AMENITIES</h1>
+          <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
+            <img src="images/amin.png">
+          </p>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/1.jpg">
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/2.jpg">
+            </div>
+            <div class="md:p-2 p-1 w-full">
+              <img alt="gallery" class="w-full h-full object-cover object-center block" src="images/3.jpg">
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full">
+              <img alt="gallery" class="w-full h-full object-cover object-center block" src="images/4.jpg">
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/5.jpg">
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/6.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+              </svg>
+              <p class="leading-relaxed mb-6">The Service Provided was truly awesome. We thank  ABQ Green Cab Co and entire team for their wonderful Support and Service</p>
+              <a class="inline-flex items-center">
+                <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+              </svg>
+              <p class="leading-relaxed mb-6">We are really Happy with the support  ABQ Green Cab Co provided us.We wish them luck.</p>
+              <a class="inline-flex items-center">
+                <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="mapouter" style="padding-left: 200px;">
+      <div class="gmap_canvas">
+        <iframe src="https://maps.google.com/maps?q=906%20Isleta%20Blvd.%20S.W.&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 1080px; height: 400px;"></iframe>
+        <style>.mapouter{position:relative;height:400px;width:1080px}.gmap_canvas{overflow:hidden;height:400px;width:1080px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{top:0;z-index:0}</style>
+        <a href="https://www.eireportingonline.com">ei reporting</a>
+      </div>
+    </div> -->
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img width="160px" height="auto" src="images/logo main.png">
+          </a>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Locate us at</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">906 Isleta Blvd. S.W., Albuquerque, NM 87105</a>
+              </li>
+              <br>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800"> abqgreencab505@gmail.com</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800"> (505) 243-6800</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-green-500">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-white text-sm text-center sm:text-left">
+            © 2023  ABQ Green Cab Co.All Rights Reserved
+            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"></a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a class="text-white">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect
+                  width="20"
+                  height="20"
+                  x="2"
+                  y="2"
+                  rx="5"
+                  ry="5"
+                ></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (() => {
+  // Respect user perference
+  const isReducedMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  ).matches;
+
+  // Helper to apply inline CSS
+  const setStyleProps = ($el, styles) => {
+    for (const [key, value] of Object.entries(styles)) {
+      if (value === false) {
+        $el.style.removeProperty(key);
+      } else {
+        $el.style.setProperty(key, value);
+      }
+    }
+  };
+
+  document.querySelectorAll('.Carousel').forEach(($carousel) => {
+    $carousel.scrollLeft = 0;
+
+    const $cards = Array.from($carousel.querySelectorAll('.Card'));
+    const $pagination = $carousel.nextElementSibling;
+    const [$previous, $next] = $pagination.querySelectorAll('.Arrow');
+    $pagination.querySelector('.Dot').classList.add('Dot--active');
+
+    const $start = document.createElement('div');
+    const $end = document.createElement('div');
+    $carousel.prepend($start);
+    $carousel.append($end);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.target === $start) {
+          if ($previous) {
+            $previous.disabled = entry.isIntersecting;
+          }
+        }
+        if (entry.target === $end) {
+          if ($next) {
+            $next.disabled = entry.isIntersecting;
+          }
+        }
+      });
+    });
+    observer.observe($start);
+    observer.observe($end);
+
+    const scrollTo = ($card) => {
+      let offset = getOffset($card);
+      const left = document.dir === 'rtl' ? -offset : offset;
+      const behavior = isReducedMotion ? 'auto' : 'smooth';
+      $carousel.scrollTo({left, behavior});
+    };
+
+    const getOffset = ($el) => {
+      let offset = $el.offsetLeft;
+      if (document.dir === 'rtl') {
+        offset = $carousel.offsetWidth - (offset + $el.offsetWidth);
+      }
+      return offset;
+    };
+
+    $previous.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      let $card = $cards[0];
+      const scroll = Math.abs($carousel.scrollLeft);
+      $cards.forEach(($item) => {
+        const offset = getOffset($item);
+        if (offset - scroll < -1 && offset > getOffset($card)) {
+          $card = $item;
+        }
+      });
+      scrollTo($card);
+    });
+
+    $next.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      let $card = $cards[$cards.length - 1];
+      const scroll = Math.abs($carousel.scrollLeft);
+      $cards.forEach(($item) => {
+        const offset = getOffset($item);
+        if (offset - scroll > 1 && offset < getOffset($card)) {
+          $card = $item;
+        }
+      });
+      scrollTo($card);
+    });
+
+    $pagination.addEventListener('click', (ev) => {
+      if (ev.target.classList.contains('Dot')) {
+        ev.preventDefault();
+        const $card = document.querySelector(new URL(ev.target.href).hash);
+        if ($card) scrollTo($card);
+      }
+    });
+
+    // Highlight nearest "Dot" in pagination
+    let scrollTimeout;
+    $carousel.addEventListener(
+      'scroll',
+      () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          let $dot = $pagination.querySelector('.Dot--active');
+          if ($dot) $dot.classList.remove('Dot--active');
+          let $active;
+          const scroll = Math.abs($carousel.scrollLeft);
+          if (scroll <= 0) {
+            $active = $cards[0];
+          }
+          if (scroll >= $carousel.scrollWidth - $carousel.offsetWidth) {
+            $active = $cards[$cards.length - 1];
+          }
+          if (!$active) {
+            let oldDiff;
+            $cards.forEach(($card) => {
+              const newDiff = Math.abs(scroll - getOffset($card));
+              if (!$active || newDiff < oldDiff) {
+                $active = $card;
+                oldDiff = newDiff;
+              }
+            });
+          }
+          $dot = $pagination.querySelector(
+            `[href="#${($active ?? $card[0]).id}"]`
+          );
+          if ($dot) $dot.classList.add('Dot--active');
+        }, 50);
+      },
+      {passive: true}
+    );
+
+    // Improve arrow key navigation
+    $carousel.addEventListener('keydown', (ev) => {
+      if (/^(Arrow)?Left$/.test(ev.key)) {
+        ev.preventDefault();
+        (document.dir === 'rtl' ? $next : $previous).click();
+      } else if (/(Arrow)?Right$/.test(ev.key)) {
+        ev.preventDefault();
+        (document.dir === 'rtl' ? $previous : $next).click();
+      }
+    });
+
+    // Improve transition when tabbing focus
+
+    let scrollLeft = 0;
+    $carousel.addEventListener(
+      'blur',
+      (ev) => {
+        scrollLeft = $carousel.scrollLeft;
+      },
+      {capture: true}
+    );
+    $carousel.addEventListener(
+      'focus',
+      (ev) => {
+        $carousel.scrollLeft = scrollLeft;
+        const $card = ev.target.closest('.Card');
+        if ($card) scrollTo($card);
+      },
+      {capture: true}
+    );
+  });
+
+  // Optional polyfill for Safari 14
+  if (!isReducedMotion && !window.CSS.supports('scroll-behavior: smooth')) {
+    import('https://cdn.skypack.dev/smoothscroll-polyfill').then((module) => {
+      module.polyfill();
+    });
+  }
+})();
+
+(() => {
+  // Toggle right-to-left for demo
+  document.querySelector('#toggle-rtl').addEventListener('change', (ev) => {
+    document.dir = ev.target.checked ? 'rtl' : 'ltr';
+    document.querySelectorAll('.Carousel').forEach(($carousel) => {
+      $carousel.scrollLeft = 0;
+    });
+  });
+
+  // Toggle single slides class for demo
+  document.querySelector('#toggle-single').addEventListener('change', (ev) => {
+    document.querySelectorAll('.Carousel').forEach(($carousel) => {
+      $carousel.classList.toggle('Carousel--single', ev.target.checked);
+    });
+  });
+})();
+    </script>
+  </body>
+</html>
